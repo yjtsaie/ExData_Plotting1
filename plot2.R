@@ -13,7 +13,7 @@ data1$Datetime <- as.POSIXct(datetime)
 # clean up data and plotiton screen
 data1$Global_active_power[data1$Global_active_power=="?"] <- NA 
 data1$Global_active_power <- as.numeric(data1$Global_active_power) 
-plot(data1$Global_active_power ~ data1$Datetime, type = "l",ylab = "Global Active Power (kilowatts)", xlab = "")
+plot(data1$Datetime,data1$Global_active_power, type = "l",ylab = "Global Active Power (kilowatts)", xlab = "")
 
 ## plot into png file plot2.png
 png(file="plot2.png",width = 480, height = 480)
