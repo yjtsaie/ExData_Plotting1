@@ -35,7 +35,7 @@ plot(data1$Voltage ~ data1$Datetime, type = "l",ylab = "Voltage", xlab = "dateti
 plot(data1$Sub_metering_1 ~ data1$Datetime, type = "l",ylab = "Engery Sub metering", xlab = "")
 lines(data1$Sub_metering_2 ~ data1$Datetime, col="Red")
 lines(data1$Sub_metering_3 ~ data1$Datetime, col="Blue")
-legend("topright", legend = c("sub_metering_1", "sub_metering_2","sub_metering_3"),
+legend("topright", legend = c("sub_metering_1", "sub_metering_2","sub_metering_3"), bty="n",
        lty = 1, lwd=2, col=c("Black","Red","Blue"), xjust = 1, yjust = 1)
 plot(data1$Global_reactive_power ~ data1$Datetime, type = "l",ylab = "Global_reactive_power", xlab = "datatime")
 
@@ -47,7 +47,7 @@ plot(data1$Voltage ~ data1$Datetime, type = "l",ylab = "Voltage", xlab = "dateti
 plot(data1$Sub_metering_1 ~ data1$Datetime, type = "l",ylab = "Engery Sub metering", xlab = "")
 lines(data1$Sub_metering_2 ~ data1$Datetime, col="Red")
 lines(data1$Sub_metering_3 ~ data1$Datetime, col="Blue")
-legend("topright", legend = c("sub_metering_1", "sub_metering_2","sub_metering_3"),
+legend("topright", legend = c("sub_metering_1", "sub_metering_2","sub_metering_3"), bty="n",
        lty = 1, lwd=2, col=c("Black","Red","Blue"), xjust = 1, yjust = 1)
 plot(data1$Global_reactive_power ~ data1$Datetime, type = "l",ylab = "Global_reactive_power", xlab = "datatime")
 dev.off()
