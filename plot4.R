@@ -32,8 +32,8 @@ plot(data1$Datetime, data1$Global_active_power, type = "l",ylab = "Global Active
 plot(data1$Datetime, data1$Voltage, type = "l",ylab = "Voltage", xlab = "datetime")
 
 plot(data1$Datetime, data1$Sub_metering_1, type = "l",ylab = "Engery Sub metering", xlab = "")
-lines(data1$Sub_metering_2 ~ data1$Datetime, col="Red")
-lines(data1$Sub_metering_3 ~ data1$Datetime, col="Blue")
+lines(data1$Datetime, data1$Sub_metering_2, col="Red")
+lines(data1$Datetime, data1$Sub_metering_3, col="Blue")
 legend("topright", legend = c("sub_metering_1", "sub_metering_2","sub_metering_3"), bty="n",
        lty = 1, lwd=2, col=c("Black","Red","Blue"), xjust = 1, yjust = 1)
 plot(data1$Datetime, data1$Global_reactive_power, type = "l",ylab = "Global_reactive_power", xlab = "datatime")
@@ -44,8 +44,8 @@ par(mfrow=c(2,2), oma=c(0,0,0,0))
 plot(data1$Datetime, data1$Global_active_power, type = "l",ylab = "Global Active Power", xlab = "")
 plot(data1$Datetime, data1$Voltage, type = "l",ylab = "Voltage", xlab = "datetime")
 plot(data1$Datetime, data1$Sub_metering_1, type = "l",ylab = "Engery Sub metering", xlab = "")
-lines(data1$Sub_metering_2 ~ data1$Datetime, col="Red")
-lines(data1$Sub_metering_3 ~ data1$Datetime, col="Blue")
+lines(data1$Datetime, data1$Sub_metering_2, col="Red")
+lines(data1$Datetime, data1$Sub_metering_3,col="Blue")
 legend("topright", legend = c("sub_metering_1", "sub_metering_2","sub_metering_3"), bty="n",
        lty = 1, lwd=2, col=c("Black","Red","Blue"), xjust = 1, yjust = 1)
 plot(data1$Datetime, data1$Global_reactive_power, type = "l",ylab = "Global_reactive_power", xlab = "datatime")
