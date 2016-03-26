@@ -17,5 +17,6 @@ plot(data1$Global_active_power ~ data1$Datetime, type = "l",ylab = "Global Activ
 
 ## plot into png file plot2.png
 png(file="plot2.png",width = 480, height = 480)
-plot(data1$Global_active_power ~ data1$Datetime, type = "l",ylab = "Global Active Power (kilowatts)", xlab = "")
+png(file="plot2.png",width = 480, height = 480)
+plot(data1$Datetime,data1$Global_active_power, type = "l",ylab = "Global Active Power (kilowatts)", xlab = "")
 dev.off()
