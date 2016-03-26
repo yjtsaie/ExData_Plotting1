@@ -10,9 +10,10 @@ data1 <- subset(full_data, subset = (Date >= "2007-02-01" & Date <= "2007-02-02"
 
 ## remove unwanted data to free up memory
 rm(full_data)
-## handle NA value and plot
+## handle NA value and plot on screen
 data1$Global_active_power[data1$Global_active_power=="?"] <- NA 
 data1$Global_active_power <- as.numeric(data1$Global_active_power) 
+## plot into png file with desire size
 hist(data1$Global_active_power , col="red", main="Global Active Power",xlab="Global Active Power (kilowatts)") 
 png(file="plot1.png",width = 480, height = 480)
 hist(data1$Global_active_power , col="red", main="Global Active Power",xlab="Global Active Power (kilowatts)") 
